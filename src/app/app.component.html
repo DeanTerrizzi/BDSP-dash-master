@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  
+  <!-- header nav -->
+  <div class="row">
+    <div class="col">
+      <app-header></app-header>
+    </div>
+  </div>
+
+  <!-- sidebar and variable content -->
+  <!-- *ngIf="authorized" -->
+  <div class="row" style="height: 100%;" id="main-content-div">
+    <div class="col-md-auto sidebar">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col main-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>
